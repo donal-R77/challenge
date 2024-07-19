@@ -28,8 +28,7 @@ jobs:
         python -m venv myenv
         source myenv/bin/activate
         python -m pip install --upgrade pip
-        pip install numpy pandas
-        pip install flake8 pytest
+        pip install numpy pandas flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
